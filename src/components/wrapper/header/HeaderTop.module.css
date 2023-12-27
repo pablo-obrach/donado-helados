@@ -1,0 +1,47 @@
+.containerTop {
+  display: flex;
+  align-items: center;
+  gap: 6.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.imgLogo {
+  width: 50%;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 60%;
+  height: 100vh;
+  padding: 1rem;
+  color: #000;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.items {
+  margin-bottom: 1rem;
+}

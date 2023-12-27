@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  background-image: url(../../../assets/banners/pbackground.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
