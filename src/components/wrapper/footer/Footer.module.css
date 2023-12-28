@@ -1,0 +1,28 @@
+.mainContainer {
+  background-image: url('../../../assets/banners/footer-img2.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.logoContainer {
+  width: 6rem;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+}

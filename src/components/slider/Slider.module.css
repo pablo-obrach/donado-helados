@@ -1,0 +1,70 @@
+.container {
+  height: 100%;
+}
+.mainContainer {
+  width: 250px;
+  height: 7.4rem;
+  margin: 0 auto;
+}
+
+/* Slider */
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.sliderTitle {
+  font-family: reenie beanie;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.sliderTitle h2 {
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+
+/* Imgs */
+
+.containerImgs {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.containerImgs img {
+  width: 100%;
+}
+
+.ulContainer {
+  padding: 0;
+  margin: 0;
+}
+
+/* Arrows */
+
+.leftArrow,
+.rigthArrow {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Dots */
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.dotsContainerItem {
+  margin-right: 0.5rem;
+}
+
+div.active {
+  color: #bfbaba;
+}
