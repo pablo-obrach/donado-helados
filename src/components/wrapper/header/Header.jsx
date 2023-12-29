@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <div className={styles.container}>
         <HeaderTop />
-        <HeaderText text='Descubre la magia en cada cucharada' />
+        <HeaderText text='DESCUBRE LA MAGIA EN CADA CUCHARADA' />
       </div>
       <Separator />
     </>

@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef} from 'react'
 //Assets
-import {sliderData} from '../../assets/sliderData'
+import {sliderData} from '../../mock/sliderData'
 //Styles
 import styles from './Slider.module.css'
 const Slider = () => {

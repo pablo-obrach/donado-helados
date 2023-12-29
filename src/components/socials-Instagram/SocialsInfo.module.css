@@ -1,0 +1,26 @@
+.mainContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.logo {
+  width: 15%;
+  height: 15%;
+}
+
+.infoContainer {
+  margin-top: 0.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.info {
+  font-weight: 700;
+}
