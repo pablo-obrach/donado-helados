@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef} from 'react'
+import {useState, useRef} from 'react'
 //Assets
 import {sliderData} from '../../mock/sliderData'
 //Styles
@@ -6,15 +6,6 @@ import styles from './Slider.module.css'
 const Slider = () => {
   const listRef = useRef()
   const [currentIndex, setCurrentIndex] = useState(0)
-
-  useEffect(() => {
-    const listNode = listRef.current
-    const imgNode = listNode.querySelectorAll('li > img')[currentIndex]
-
-    if (imgNode) {
-      imgNode.scrollIntoView({behaviour: 'smooth'})
-    }
-  }, [currentIndex])
 
   const scrollToImage = direction => {
     if (direction === 'prev') {
@@ -49,13 +40,16 @@ const Slider = () => {
           </div>
 
           <div className={styles.containerImgs}>
-            <ul className={styles.ulContainer} ref={listRef}>
-              {sliderData.map(item => (
-                <li key={item.id}>
+            <div className={styles.ulContainer} ref={listRef}>
+              {sliderData.map((item, index) => (
+                <div
+                  key={item.id}
+                  style={{display: index === currentIndex ? 'block' : 'none'}}
+                >
                   <img src={item.src} alt='sabores especiales' />
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
           <div
             className={styles.rigthArrow}

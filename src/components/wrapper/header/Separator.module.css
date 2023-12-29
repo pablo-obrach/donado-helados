@@ -1,21 +1,34 @@
 .container {
   margin-bottom: 2rem;
 }
+.colorOne,
+.colorTwo,
+.colorThree {
+  width: 100%;
+  height: 7px;
+}
 
 .colorOne {
   background-color: #f48536;
-  width: 100%;
-  height: 7px;
 }
 
 .colorTwo {
   background-color: #fcecd4;
-  width: 100%;
-  height: 7px;
 }
 
 .colorThree {
   background-color: #94cccc;
-  width: 100%;
-  height: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-bottom: 4rem;
+  }
+
+  .colorOne,
+  .colorTwo,
+  .colorThree {
+    width: 100%;
+    height: 10px;
+  }
 }

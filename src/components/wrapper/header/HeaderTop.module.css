@@ -46,3 +46,35 @@
 .items {
   margin-bottom: 1rem;
 }
+
+.containerNav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modalHeader {
+    display: none;
+  }
+
+  .containerTop {
+    width: 100%;
+    padding: 1rem;
+    gap: 23rem;
+  }
+
+  .imgLogo {
+    width: 100%;
+  }
+
+  .linkLogo {
+    width: 200px;
+  }
+
+  .containerIcon {
+    display: none;
+  }
+
+  .containerNav {
+    display: inline-block;
+  }
+}

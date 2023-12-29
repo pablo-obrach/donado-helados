@@ -68,3 +68,24 @@
 div.active {
   color: #bfbaba;
 }
+
+@media (min-width: 1200px) {
+  .mainContainer {
+    width: 450px;
+    height: 13rem;
+    margin: 0 auto;
+  }
+
+  .sliderTitle {
+    font-size: 2rem;
+  }
+
+  .leftArrow,
+  .rigthArrow {
+    font-size: 4rem;
+  }
+
+  .dotsContainer {
+    font-size: 1.5rem;
+  }
+}

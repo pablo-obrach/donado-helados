@@ -16,3 +16,20 @@ p {
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .navList {
+    display: flex;
+    gap: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .link {
+    &:hover {
+      color: #f48536;
+    }
+  }
+}

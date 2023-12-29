@@ -1,5 +1,7 @@
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
+//*Components
+import NavBar from '../header/NavBar'
 //Assets
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
@@ -12,8 +14,10 @@ const HeaderTop = () => {
 
   return (
     <div className={styles.containerTop}>
-      <MenuIcon onClick={() => setOpen(!open)} />
-      <Link to={'/'}>
+      <div className={styles.containerIcon}>
+        <MenuIcon onClick={() => setOpen(!open)} />
+      </div>
+      <Link className={styles.linkLogo} to={'/'}>
         <img
           className={styles.imgLogo}
           src={logoDonado}
@@ -49,6 +53,10 @@ const HeaderTop = () => {
           </div>
         </div>
       )}
+
+      <div className={styles.containerNav}>
+        <NavBar />
+      </div>
     </div>
   )
 }
