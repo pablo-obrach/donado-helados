@@ -20,20 +20,33 @@ const Footer = () => {
       </Link>
 
       <NavBar />
+
       <div className={styles.socialContainer}>
         <Link
           className={styles.link}
           to={'https://www.instagram.com/donado.fabrica/'}
           target='_blank'
         >
-          <InstagramIcon />
+          <InstagramIcon
+            sx={{
+              width: {lg: 50},
+              height: {lg: 50},
+              '&:hover': {color: '#f48536'}
+            }}
+          />
         </Link>
         <Link
           className={styles.link}
           to={'https://www.instagram.com/donado.fabrica/'}
           target='_blank'
         >
-          <FacebookIcon />
+          <FacebookIcon
+            sx={{
+              width: {lg: 50},
+              height: {lg: 50},
+              '&:hover': {color: '#f48536'}
+            }}
+          />
         </Link>
       </div>
     </div>

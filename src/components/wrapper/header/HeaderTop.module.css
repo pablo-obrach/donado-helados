@@ -59,11 +59,12 @@
   .containerTop {
     width: 100%;
     padding: 1rem;
-    gap: 23rem;
+    gap: 4rem;
+    justify-content: space-around;
   }
 
   .imgLogo {
-    width: 100%;
+    width: 70%;
   }
 
   .linkLogo {

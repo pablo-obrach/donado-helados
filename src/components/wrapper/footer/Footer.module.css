@@ -10,19 +10,38 @@
   color: #fff;
   padding: 2rem 1rem;
   margin-top: 2rem;
+
+  .link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+
+    .logoContainer {
+      width: 6rem;
+    }
+  }
+
+  .socialContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.logoContainer {
-  width: 6rem;
-}
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    height: 25vh;
+    padding: 2rem;
+    justify-content: space-around;
 
-.link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-}
+    .link {
+      .logoContainer {
+        width: 10rem;
+      }
+    }
 
-.socialContainer {
-  display: flex;
-  flex-direction: column;
+    .socialContainer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

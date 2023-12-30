@@ -6,15 +6,30 @@
   width: 70%;
   margin: 0 auto;
   margin-top: 1.5rem;
+
+  .title {
+    font-family: reenie beanie;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-family: reem kufi;
+    margin: 0;
+    font-size: 1rem;
+  }
 }
 
-.title {
-  font-family: reenie beanie;
-  margin: 0;
-}
+@media screen and (min-width: 768px) {
+  .infoContainer {
+    flex-direction: column;
+    margin-top: 3rem;
 
-.subtitle {
-  font-family: reem kufi;
-  margin: 0;
-  font-size: 1rem;
+    .title {
+      font-size: 3rem;
+    }
+
+    .subtitle {
+      font-size: 2rem;
+    }
+  }
 }
