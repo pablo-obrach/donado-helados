@@ -1,4 +1,4 @@
-import {useState, useRef} from 'react'
+import {useState, useRef, useEffect} from 'react'
 //Assets
 import {sliderData} from '../../mock/sliderData'
 //Styles
@@ -6,6 +6,23 @@ import styles from './Slider.module.css'
 const Slider = () => {
   const listRef = useRef()
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  /*
+    PARADIGMA: currentIndex compararlo con el que este actual y si es diferente +1 sino -1 O 0
+    y que esto se repita cada 4 segundos por ej.
+  */
+
+  //ALGORITMO
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentIndex < sliderData.length - 1) {
+        setCurrentIndex(currentIndex + 1)
+      } else {
+        setCurrentIndex(0)
+      }
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [currentIndex])
 
   const scrollToImage = direction => {
     if (direction === 'prev') {

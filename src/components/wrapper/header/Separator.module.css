@@ -20,7 +20,7 @@
   background-color: #94cccc;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width > 768px) {
   .container {
     margin-bottom: 4rem;
   }
