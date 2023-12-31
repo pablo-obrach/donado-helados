@@ -5,7 +5,10 @@ import './LaFabrica.module.css'
 const LaFabrica = () => {
   return (
     <>
-      <Wrapper></Wrapper>
+      <Wrapper
+        backgroundImage={'src/assets/banners/video-background.webp'}
+        text={'40 AÑOS CREANDO SABORES QUE TE ENAMORAN'}
+      ></Wrapper>
     </>
   )
 }

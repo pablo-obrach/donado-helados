@@ -3,14 +3,18 @@ import HeaderText from './HeaderText'
 import Separator from './Separator'
 //Styles
 import styles from './Header.module.css'
-const Header = () => {
+const Header = ({backgroundImage, text}) => {
   return (
     <>
-      <div className={styles.container}>
+      <div
+        style={{backgroundImage: `url(${backgroundImage})`}}
+        className={`${backgroundImage === undefined ? '' : styles.container}`}
+      >
         <HeaderTop />
-        <HeaderText text='DESCUBRE LA MAGIA EN CADA CUCHARADA' />
+        <HeaderText text={text} />
       </div>
-      <Separator />
+      {backgroundImage === undefined ? null : <Separator />}
+      {/* <Separator /> */}
     </>
   )
 }
