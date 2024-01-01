@@ -18,6 +18,9 @@ p {
 }
 
 @media (min-width: 768px) {
+  .navContainer {
+    position: relative;
+  }
   .navList {
     display: flex;
     gap: 1rem;
@@ -31,5 +34,15 @@ p {
     &:hover {
       color: #f48536;
     }
+  }
+
+  .saboresContainer {
+    position: absolute;
+    top: 56.5px;
+    left: 0;
+    width: 50%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
   }
 }

@@ -39,7 +39,7 @@ const HeaderTop = () => {
                   <UseAnimations
                     className={styles.plusToX}
                     animation={plusToX}
-                    size={30}
+                    size={25}
                     strokeColor='#D3D3D3'
                     speed={2}
                     onClick={() => setOptions(!options)}

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 4.5rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   padding: 0.5rem;
   color: #fff;
   position: fixed;
@@ -34,15 +34,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 
   .optionTitle {
     color: #73b3b3;
+    margin: 0;
   }
 }
 
 h5 {
   margin: 0;
+  margin-bottom: 0.3rem;
 }
 
 .link {
@@ -60,6 +61,7 @@ h5 {
 
 .items {
   margin-bottom: 1rem;
+  border-bottom: 1px solid #000;
 }
 
 .containerNav {

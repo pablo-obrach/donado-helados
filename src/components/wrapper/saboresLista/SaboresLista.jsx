@@ -2,20 +2,20 @@ import {Link} from 'react-router-dom'
 //*Styles
 import styles from './SaboresLista.module.css'
 
-const SaboresLista = () => {
-  const saboresType = [
-    {type: 'cremas'},
-    {type: 'frutalesCrema'},
-    {type: 'dulcesDeLeche'},
-    {type: 'frutalesAgua'},
-    {type: 'chocolates'},
-    {type: 'especiales'}
+const SaboresLista = ({showLista}) => {
+  const saboresOptions = [
+    {type: 'cremas', name: 'cremas'},
+    {type: 'frutalescrema', name: 'Frutales a la crema'},
+    {type: 'dulcesDeLeche', name: 'Dulces de leche'},
+    {type: 'frutalesAgua', name: 'Frutales al agua'},
+    {type: 'chocolates', name: 'chocolates'},
+    {type: 'especiales', name: 'especiales'}
   ]
   return (
-    <ul className={styles.options}>
-      {saboresType.map((sabor, index) => (
+    <ul onMouseLeave={showLista} className={styles.options}>
+      {saboresOptions.map((sabor, index) => (
         <Link className={styles.link} to={`/sabores/${sabor.type}`} key={index}>
-          <li className={styles.items}>{sabor.type}</li>
+          <li className={styles.items}>{sabor.name}</li>
         </Link>
       ))}
     </ul>
