@@ -1,7 +1,7 @@
 .containerTop {
   display: flex;
   align-items: center;
-  gap: 6.5rem;
+  gap: 4.5rem;
   background: rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
   color: #fff;
@@ -11,7 +11,7 @@
 }
 
 .imgLogo {
-  width: 50%;
+  width: 60%;
 }
 
 .modalHeader {
@@ -30,10 +30,25 @@
   box-shadow: 0 0 10px 100vmax rgba(0, 0, 0, 0.5);
 }
 
+.optionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .optionTitle {
+    color: #73b3b3;
+  }
+}
+
+h5 {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
