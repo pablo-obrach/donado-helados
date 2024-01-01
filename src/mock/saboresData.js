@@ -1,5 +1,10 @@
 export const saboresData = [
-  {ID: 1, title: 'americana', type: 'cremas', description: ''},
+  {
+    ID: 1,
+    title: 'americana',
+    type: 'cremas',
+    description: 'Riquisima crema americana'
+  },
   {ID: 2, title: 'crema almendras', type: 'cremas', description: ''},
   {ID: 3, title: 'crema del cielo', type: 'cremas', description: ''},
   {ID: 4, title: 'crema flan', type: 'cremas', description: ''},

@@ -14,7 +14,6 @@ const Header = ({backgroundImage, text}) => {
         <HeaderText text={text} />
       </div>
       {backgroundImage === undefined ? null : <Separator />}
-      {/* <Separator /> */}
     </>
   )
 }

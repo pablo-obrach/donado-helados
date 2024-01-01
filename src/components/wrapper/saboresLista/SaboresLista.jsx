@@ -5,7 +5,7 @@ import styles from './SaboresLista.module.css'
 const SaboresLista = ({showLista}) => {
   const saboresOptions = [
     {type: 'cremas', name: 'cremas'},
-    {type: 'frutalescrema', name: 'Frutales a la crema'},
+    {type: 'frutalesCrema', name: 'Frutales a la crema'},
     {type: 'dulcesDeLeche', name: 'Dulces de leche'},
     {type: 'frutalesAgua', name: 'Frutales al agua'},
     {type: 'chocolates', name: 'chocolates'},
