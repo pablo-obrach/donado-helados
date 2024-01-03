@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 //*Components
 import SaboresLista from '../saboresLista/SaboresLista'
 //*Styles
@@ -10,11 +11,16 @@ const NavBar = () => {
   return (
     <div className={styles.navContainer}>
       <ul className={styles.navList}>
-        <li>
-          <Link className={styles.link} to={'/sabores'}>
-            <p onMouseEnter={() => setShowLista(true)}>SABORES</p>
-          </Link>
+        <li className={styles.saboresDropDown}>
+          <div
+            className={styles.saboresDropDown}
+            onMouseEnter={() => setShowLista(true)}
+          >
+            <p>SABORES</p>
+            <ArrowDropDownIcon sx={{paddingBottom: '5px'}} />
+          </div>
         </li>
+
         <li>
           <Link className={styles.link} to={'/lafabrica'}>
             <p>LA FABRICA</p>

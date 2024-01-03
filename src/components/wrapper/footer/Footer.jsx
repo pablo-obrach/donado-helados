@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import logoDonado from '../../../assets/iconos/logo-donado.webp'
 //*Components
-import NavBar from '../header/NavBar'
+import NavBarFooter from './NavBarFooter'
 //*Styles
 import styles from './Footer.module.css'
 
@@ -19,7 +19,7 @@ const Footer = () => {
         />
       </Link>
 
-      <NavBar />
+      <NavBarFooter />
 
       <div className={styles.socialContainer}>
         <Link

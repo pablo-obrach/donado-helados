@@ -1,0 +1,63 @@
+.container {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 90%;
+
+  .contactForm {
+    .field {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .label {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+    .select {
+      padding: 0.3rem;
+    }
+    .button {
+      width: 100%;
+      margin-bottom: 1rem;
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.field > input {
+  padding: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 40%;
+    border-top: none;
+    border-bottom: none;
+
+    .contactForm {
+      .field {
+        margin-top: 0rem;
+
+        .label {
+          margin-bottom: 0.5rem;
+          font-size: 1.2rem;
+        }
+      }
+
+      .button {
+        cursor: pointer;
+        &:hover {
+          background-color: #d77026;
+        }
+      }
+    }
+  }
+}

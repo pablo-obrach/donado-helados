@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom'
 import {useState} from 'react'
 import {saboresData} from '../../../mock/saboresData'
+import {saboresTitle} from '../../../mock/saboresTitles'
 import UseAnimations from 'react-useanimations'
 //*Assets
 import plusToX from 'react-useanimations/lib/plusToX'
@@ -18,37 +19,43 @@ const Sabores = () => {
   }
 
   return (
-    <>
+    <div className={styles.container}>
       <Wrapper>
         <div className={styles.mainContainer}>
-          <h1 className={styles.mainTitle}>{sabor}</h1>
-          {saboresData && saboresData.length > 0 ? (
-            saboresData
-              .filter(item => item.type === sabor)
-              .map(item => (
-                <div key={item.ID} className={styles.item}>
-                  <div className={styles.title}>
-                    <h2>{item.title}</h2>
-                    <UseAnimations
-                      animation={plusToX}
-                      size={20}
-                      speed={2}
-                      onClick={() => handleSingleSelection(item.ID)}
-                    />
-                  </div>
-                  {selected === item.ID && (
-                    <div className={styles.description}>
-                      <p>{item.description}</p>
+          <h1 className={styles.mainTitle}>
+            {saboresTitle.map(item => (item.type === sabor ? item.name : null))}
+          </h1>
+          <div className={styles.divider}>
+            {saboresData && saboresData.length > 0 ? (
+              saboresData
+                .filter(item => item.type === sabor)
+                .map(item => (
+                  <div key={item.ID} className={styles.item}>
+                    <div className={styles.title}>
+                      <h2>{item.title}</h2>
+                      <div>
+                        <UseAnimations
+                          animation={plusToX}
+                          size={20}
+                          speed={2}
+                          onClick={() => handleSingleSelection(item.ID)}
+                        />
+                      </div>
                     </div>
-                  )}
-                </div>
-              ))
-          ) : (
-            <h2>No hay sabores</h2>
-          )}
+                    {selected === item.ID && (
+                      <div className={styles.description}>
+                        <p>{item.description}</p>
+                      </div>
+                    )}
+                  </div>
+                ))
+            ) : (
+              <h2>No hay sabores</h2>
+            )}
+          </div>
         </div>
       </Wrapper>
-    </>
+    </div>
   )
 }
 

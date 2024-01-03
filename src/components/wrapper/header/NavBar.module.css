@@ -21,6 +21,13 @@ p {
   .navContainer {
     position: relative;
   }
+  .saboresDropDown {
+    display: flex;
+  }
+
+  .saboresDropDown > p {
+    color: #94cccc;
+  }
   .navList {
     display: flex;
     gap: 1rem;

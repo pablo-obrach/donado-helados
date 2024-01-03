@@ -1,9 +1,5 @@
 .mainContainer {
-  width: 90%;
-  height: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-  padding: 6.5rem 0;
+  margin-top: 6rem;
 
   .mainTitle {
     text-align: center;
@@ -12,9 +8,15 @@
     font-weight: 800;
   }
 
+  .divider {
+    padding: 1rem;
+    margin-bottom: 9rem;
+  }
+
   .item {
     border-bottom: 1px solid #000;
     margin-bottom: 0.5rem;
+
     .title {
       display: flex;
       align-items: center;
@@ -29,26 +31,51 @@
 
     .description > p {
       font-size: 1rem;
-      font-weight: 800;
+      font-weight: 400;
+      text-wrap: balance;
+      line-height: 1.5;
+      color: #709f9f;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    background-image: url('../../../assets/miscelanios/tasty-and-delicious.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .mainContainer {
     width: 50%;
+    margin: 0 auto;
     padding: 5rem 0;
 
     .mainTitle {
       font-size: 2rem;
     }
+
+    .divider {
+      padding: 0;
+      margin-bottom: 4.35rem;
+    }
+
     .item {
       .title > h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .title > div {
+        cursor: pointer;
+
+        &:hover {
+          background-color: #94cccc;
+          border-radius: 5px;
+        }
       }
 
       .description > p {
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
     }
   }
