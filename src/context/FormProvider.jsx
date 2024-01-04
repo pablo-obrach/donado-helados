@@ -10,6 +10,8 @@ const FormProvider = ({children}) => {
     mensaje: ''
   })
 
+  console.log(form)
+
   return (
     <FormContext.Provider value={{form, setForm}}>
       {children}

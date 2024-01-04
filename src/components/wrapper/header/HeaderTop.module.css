@@ -78,6 +78,7 @@ h5 {
     padding: 1rem;
     gap: 4rem;
     justify-content: space-around;
+    z-index: 100;
   }
 
   .imgLogo {
