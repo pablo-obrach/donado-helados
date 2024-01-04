@@ -10,7 +10,7 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <div className={styles.mainContainer}>
+    <footer className={styles.mainContainer}>
       <Link className={styles.link} to={'/'}>
         <img
           className={styles.logoContainer}
@@ -49,7 +49,7 @@ const Footer = () => {
           />
         </Link>
       </div>
-    </div>
+    </footer>
   )
 }
 

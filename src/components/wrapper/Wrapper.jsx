@@ -4,7 +4,7 @@ const Wrapper = ({children, backgroundImage, text}) => {
   return (
     <>
       <Header backgroundImage={backgroundImage} text={text} />
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   )

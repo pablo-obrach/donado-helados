@@ -6,13 +6,13 @@ import styles from './Header.module.css'
 const Header = ({backgroundImage, text}) => {
   return (
     <>
-      <div
+      <header
         style={{backgroundImage: `url(${backgroundImage})`}}
         className={`${backgroundImage === undefined ? '' : styles.container}`}
       >
         <HeaderTop />
         <HeaderText text={text} />
-      </div>
+      </header>
       {backgroundImage === undefined ? null : <Separator />}
     </>
   )
