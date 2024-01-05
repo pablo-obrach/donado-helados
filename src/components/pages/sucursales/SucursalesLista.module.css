@@ -1,0 +1,13 @@
+.container {
+  width: 90%;
+  height: 15rem;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+@media (width >= 768px) {
+  .container {
+    width: 40%;
+    height: 41rem;
+  }
+}

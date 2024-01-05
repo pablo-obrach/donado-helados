@@ -78,7 +78,7 @@ div.active {
   color: #bfbaba;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .mainContainer {
     width: 750px;
     height: 13rem;

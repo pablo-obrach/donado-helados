@@ -1,0 +1,130 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  .titleContainer {
+    text-align: center;
+    margin-bottom: 1rem;
+    .subTitle {
+      font-size: 1rem;
+      text-wrap: balance;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .formContainer {
+    .searchForm {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .searchBarContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .searchBar {
+          outline: none;
+          padding: 0.5rem 1rem;
+          border: 1px solid #000;
+          border-radius: 5px;
+
+          &::placeholder {
+            color: #9f9f9f;
+            font-size: 0.8rem;
+            text-align: center;
+          }
+        }
+        .error {
+          color: tomato;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .searchButton {
+      outline: none;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .mapContainer > img {
+    width: 100%;
+  }
+}
+
+@media (width >= 768px) {
+  .mainContainer {
+    width: 70%;
+
+    .titleContainer {
+      .title {
+        font-size: 2rem;
+      }
+      .subTitle {
+        font-size: 1.2rem;
+      }
+    }
+    .searchMapListContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      margin: 0 auto;
+      gap: 1rem;
+
+      .formContainer {
+        .searchForm {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-bottom: 1rem;
+
+          .searchBarContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            label {
+              font-size: 1.5rem;
+            }
+
+            .searchBar {
+              width: 100%;
+
+              &::placeholder {
+                font-size: 1rem;
+              }
+            }
+            .error {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .searchButton {
+          font-size: 1rem;
+        }
+      }
+      .mapContainer {
+        display: flex;
+
+        gap: 1rem;
+        width: 100%;
+      }
+      .mapContainer > img {
+        width: 70%;
+      }
+    }
+  }
+}

@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (width >= 768px) {
   .mainContainer {
     width: 70%;
 

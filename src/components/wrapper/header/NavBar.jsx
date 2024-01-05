@@ -14,7 +14,7 @@ const NavBar = () => {
         <li className={styles.saboresDropDown}>
           <div
             className={styles.saboresDropDown}
-            onMouseEnter={() => setShowLista(true)}
+            onClick={() => setShowLista(!showLista)}
           >
             <p>SABORES</p>
             <ArrowDropDownIcon sx={{paddingBottom: '5px'}} />
@@ -39,7 +39,7 @@ const NavBar = () => {
       </ul>
       {showLista ? (
         <div className={styles.saboresContainer}>
-          <SaboresLista showLista={() => setShowLista(false)} />
+          <SaboresLista />
         </div>
       ) : null}
     </div>

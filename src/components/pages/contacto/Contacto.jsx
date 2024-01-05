@@ -9,13 +9,13 @@ const Contacto = () => {
   return (
     <>
       <Wrapper>
-        <div className={styles.mainContainer}>
+        <article className={styles.mainContainer}>
           <h1 className={styles.title}>CONTACTO</h1>
           <div className={styles.compentsContacto}>
             <ContactoInfo />
             <ContactoForm />
           </div>
-        </div>
+        </article>
       </Wrapper>
     </>
   )

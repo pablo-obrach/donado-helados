@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (width >= 768px) {
   .container {
     background-image: url('../../../assets/miscelanios/tasty-and-delicious.webp');
     background-position: center;

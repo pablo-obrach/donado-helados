@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (width >= 768px) {
   .mainContainer {
     height: 25vh;
     padding: 2rem;

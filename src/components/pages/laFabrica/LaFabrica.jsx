@@ -12,7 +12,7 @@ const LaFabrica = () => {
         backgroundImage={'src/assets/banners/video-background.webp'}
         text={'40 AÑOS CREANDO SABORES QUE TE ENAMORAN'}
       >
-        <div className={styles.infoContainer}>
+        <article className={styles.infoContainer}>
           <h2 className={styles.title}>
             ¡Descubre el secreto detrás de las heladerías más prestigiosas!
           </h2>
@@ -43,7 +43,7 @@ const LaFabrica = () => {
               alt='La Fabrica Donado'
             />
           </div>
-        </div>
+        </article>
       </Wrapper>
     </>
   )

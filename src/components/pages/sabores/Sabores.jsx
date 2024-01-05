@@ -21,7 +21,7 @@ const Sabores = () => {
   return (
     <div className={styles.container}>
       <Wrapper>
-        <div className={styles.mainContainer}>
+        <article className={styles.mainContainer}>
           <h1 className={styles.mainTitle}>
             {saboresTitle.map(item => (item.type === sabor ? item.name : null))}
           </h1>
@@ -53,7 +53,7 @@ const Sabores = () => {
               <h2>No hay sabores</h2>
             )}
           </div>
-        </div>
+        </article>
       </Wrapper>
     </div>
   )

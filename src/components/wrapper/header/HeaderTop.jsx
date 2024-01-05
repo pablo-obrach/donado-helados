@@ -48,12 +48,12 @@ const HeaderTop = () => {
                 {options && <SaboresLista />}
               </li>
               <li className={styles.items}>
-                <Link className={styles.link} to={'/nosotros'}>
+                <Link className={styles.link} to={'/lafabrica'}>
                   <h5>LA FABRICA</h5>
                 </Link>
               </li>
               <li className={styles.items}>
-                <Link className={styles.link} to={'/'}>
+                <Link className={styles.link} to={'/sucursales'}>
                   <h5>SUCURSALES</h5>
                 </Link>
               </li>
