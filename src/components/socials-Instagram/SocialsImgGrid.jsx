@@ -2,7 +2,8 @@ import {useState, useEffect} from 'react'
 //*Components
 import BtnAction from '../buttons/btnAction'
 //*Assets
-import socialImgData from '../../mock/socialsImgData'
+import socialImgData from '../../../public/socialsImgData.json'
+
 //*Styles
 import styles from './SocialsImgGrid.module.css'
 const SocialsImgGrid = () => {

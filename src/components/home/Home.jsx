@@ -4,13 +4,14 @@ import Slider from '../slider/Slider'
 import FollowUs from '../socials-Instagram/FollowUs'
 import SocialsInfo from '../socials-Instagram/SocialsInfo'
 import SocialsImgGrid from '../socials-Instagram/SocialsImgGrid'
-//*Styles
-import './Home.module.css'
+//*Assets
+import bannerHomer from '../../assets/banners/pbackground.webp'
+
 const Home = () => {
   return (
     <Wrapper
       text={'DESCUBRE LA MAGIA EN CADA CUCHARADA'}
-      backgroundImage={'src/assets/banners/pbackground.webp'}
+      backgroundImage={bannerHomer}
     >
       <Slider />
       <FollowUs social='@DONADO.FABRICA' />

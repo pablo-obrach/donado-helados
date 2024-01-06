@@ -1,7 +1,7 @@
 import {useState, useRef, useEffect} from 'react'
 //Assets
-// import {sliderData} from '../../mock/sliderData'
-import sliderSaboresData from '../../mock/sliderSaboresData'
+import sliderData from '../../../public/sliderSaboresData.json'
+
 //Styles
 import styles from './Slider.module.css'
 import {Link} from 'react-router-dom'
@@ -9,15 +9,9 @@ const Slider = () => {
   const listRef = useRef()
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  /*
-    PARADIGMA: currentIndex compararlo con el que este actual y si es diferente +1 sino -1 O 0
-    y que esto se repita cada 4 segundos por ej.
-  */
-
-  //ALGORITMO
   useEffect(() => {
     const interval = setInterval(() => {
-      if (currentIndex < sliderSaboresData.length - 1) {
+      if (currentIndex < sliderData.length - 1) {
         setCurrentIndex(currentIndex + 1)
       } else {
         setCurrentIndex(0)
@@ -33,7 +27,7 @@ const Slider = () => {
         return isFirstSlide ? 0 : curr - 1
       })
     } else {
-      const isLastSlide = currentIndex === sliderSaboresData.length - 1
+      const isLastSlide = currentIndex === sliderData.length - 1
       if (!isLastSlide) {
         setCurrentIndex(curr => curr + 1)
       }
@@ -61,7 +55,7 @@ const Slider = () => {
 
           <div className={styles.containerImgs}>
             <div className={styles.slideImgContainer} ref={listRef}>
-              {sliderSaboresData.map((item, index) => (
+              {sliderData.map((item, index) => (
                 <Link
                   key={item.id}
                   to={`/sabores/${item.type}`}
@@ -69,11 +63,6 @@ const Slider = () => {
                 >
                   <div
                     key={item.id}
-                    // style={{
-                    //   display: index === currentIndex ? 'flex' : 'none',
-                    //   alignItems: 'center',
-                    //   justifyContent: 'center'
-                    // }}
                     className={` ${
                       index === currentIndex
                         ? styles.slideImgActive
@@ -98,7 +87,7 @@ const Slider = () => {
       </div>
 
       <div className={styles.dotsContainer}>
-        {sliderSaboresData.map((_, i) => (
+        {sliderData.map((_, i) => (
           <div
             key={i}
             className={`${styles.dotsContainerItem} ${

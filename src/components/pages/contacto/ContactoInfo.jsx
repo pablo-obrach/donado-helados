@@ -1,3 +1,5 @@
+//*Assets
+import imgInfo from '../../../assets/banners/banner-fabrica.webp'
 //*Styles
 import styles from './ContactoInfo.module.css'
 
@@ -14,7 +16,7 @@ const ContactoInfo = () => {
       </p>
       <img
         className={styles.imageInfo}
-        src='src/assets/banners/banner-fabrica.webp'
+        src={imgInfo}
         alt='Donado Helados Contacto'
       />
     </div>

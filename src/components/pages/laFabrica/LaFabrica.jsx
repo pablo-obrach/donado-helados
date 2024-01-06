@@ -2,6 +2,7 @@
 import Wrapper from '../../wrapper/Wrapper'
 //*Assets
 import fabricaImg from '../../../assets/fabrica/heladero.webp'
+import bannerFabrica from '../../../assets/banners/video-background.webp'
 //*Styles
 import styles from './LaFabrica.module.css'
 
@@ -9,7 +10,7 @@ const LaFabrica = () => {
   return (
     <>
       <Wrapper
-        backgroundImage={'src/assets/banners/video-background.webp'}
+        backgroundImage={bannerFabrica}
         text={'40 AÑOS CREANDO SABORES QUE TE ENAMORAN'}
       >
         <article className={styles.infoContainer}>
